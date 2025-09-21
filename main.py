@@ -19,7 +19,7 @@ app = FastAPI()
 
 origins = [
     "https://dock-maker-ui.netlify.app",  # your frontend
-    "http://localhost:3000",              # local dev
+    "http://34.172.18.43",              # local dev
 ]
 
 app.add_middleware(
