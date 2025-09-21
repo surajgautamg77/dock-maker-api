@@ -19,7 +19,7 @@ app = FastAPI()
 
 origins = [
     "https://dock-maker-ui.netlify.app",  # your frontend
-    "http://34.172.18.43",              # local dev
+    "http://nirmaldocai.com",              # local dev
 ]
 
 app.add_middleware(
