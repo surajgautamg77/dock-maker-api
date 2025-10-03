@@ -15,12 +15,12 @@ class AzureBlobManager:
         self.blob_service_client = BlobServiceClient.from_connection_string(connection_string)
         self.container_client = self.blob_service_client.get_container_client(container_name)
  
-        # Create the container if it doesn't exist
-        if not self.container_client.exists():
-            self.container_client.create_container()
-            print(f"Container '{container_name}' created.")
-        else:
-            print(f"Container '{container_name}' already exists.")
+        # # Create the container if it doesn't exist
+        # if not self.container_client.exists():
+        #     self.container_client.create_container()
+        #     print(f"Container '{container_name}' created.")
+        # else:
+        #     print(f"Container '{container_name}' already exists.")
  
     # Create or Upload a file
     def upload_file(self, blob_name, file):
